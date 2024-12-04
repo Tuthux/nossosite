@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruivinha</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f0f6;
+            color: #4a3f55;
+            text-align: center;
+            padding-top: 50px;
+        }
+        
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+
+        input[type="password"] {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #e0a1b2;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            width: 80%;
+        }
+
+        button {
+            padding: 12px 20px;
+            background-color: #e93c78;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #f85a9e;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Digite a senha para acessar o link:</h2>
+        <input type="password" id="senha" placeholder="Digite a senha...">
+        <br><br>
+        <button onclick="verificarSenha()">Acessar</button>
+    </div>
+
+    <script>
+        function verificarSenha() {
+            const senha = document.getElementById('senha').value;
+
+            if (senha === "teamo") {
+                // Se a senha for correta, redireciona para o link
+                window.location.href = "file:///C:/Users/arthu/Documents/Arthur/AnaLuiza/seusite.html";  // Substitua com o link desejado
+            } else {
+                alert("Senha incorreta! Tente novamente.");
+            }
+        }
+    </script>
+
+</body>
+</html>
